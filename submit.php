@@ -9,7 +9,7 @@ $ID = $_POST['ID'];
 $ITEM = $_POST['ITEM'];
 $PRICE= $_POST['PRICE'];
 $QUANTITY = $_POST['$QUANTITY'];
-if($ITEM !=''||$ !=''){
+if($ITEM !='1'||$ !=''){
 //Insert Query of SQL
 $query = mysql_query("insert into items(id, Item, Quantity, price ) values ('$ID', '$ITEM', '$PRICE', '$QUANTITY')");
 echo "<br/><br/><span>Data Inserted successfully...!!</span>";
